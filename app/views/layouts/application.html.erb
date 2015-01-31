@@ -23,20 +23,20 @@
         center: myLatlng
       };
 
-      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      window.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 
       // TODO: FIX THIS
-      var contentString
+      // var contentString = 'testing'
 
-      var infowindow = new google.maps.InfoWindow({
-          content: contentString
-      });
+      // var infowindow = new google.maps.InfoWindow({
+      //     content: contentString
+      // });
 
       var marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
-          // title: 'Uluru (Ayers Rock)'
+          title: 'Uluru (Ayers Rock)'
       });
       google.maps.event.addListener(marker, 'click', function() {
         // close all other info boxes
@@ -52,10 +52,18 @@
           type: "GET",
           url: "/graduates"
         }).done(function(response) {
+          var ary = []
           response.forEach(function(graduate) {
+            var ll = new google.maps.LatLng((parseFloat(graduate.latitude)), (parseFloat(graduate.longitude)))
             new google.maps.Marker({
-            position: graduate.,
-            map: map,
+              position: ll,
+              map: window.map
+            })
+
+            // var vi = new google.maps.InfoWindow({
+            //   content: 'TEST'
+            // });
+            // console.log(parseFloat(typeof vi))
           })
         })
       })
