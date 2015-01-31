@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Bootprint</title>
-  <%= google_webfonts_init({google: ['Aller']}) %>
+  <%= google_webfonts_init({google: ['Allerta']}) %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -64,6 +64,9 @@
 
 </head>
 <body>
+  <div class='header'>
+    <img src='http://cmxhub.com/wp-content/uploads/2014/12/dbc.png'>
+  </div>
 
 <%= yield %>
 
