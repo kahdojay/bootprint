@@ -6,6 +6,7 @@ require 'geocoder'
 DBC.token = 'ce98e9d9d42bd8f4cf594c517fdee969'
 
 cohort = DBC::Cohort.all
+
 links = []
 
 cohort.each do |c|
@@ -14,6 +15,14 @@ cohort.each do |c|
       if (!s.profile[:linked_in].nil?)
         links << s.profile[:linked_in]
       end
+
+      # if (!s.profile[:twitter].nil?)
+      #   links << s.profile[:twitter]
+      # end
+
+      # if (!s.profile[:github].nil?)
+      #   links << s.profile[:github]
+      # end
     end
   end
 end
@@ -33,7 +42,8 @@ links.each do |l|
         current_location: profile.location,
         current_employer: profile.current_companies[0][:company],
         latitude: coordinates['lat'],
-        longitude: coordinates['lng']
+        longitude: coordinates['lng'],
+        linkedin_url: l
         )
     end
   end

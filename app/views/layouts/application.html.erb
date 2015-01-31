@@ -24,37 +24,19 @@
       };
 
       window.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-
-      // TODO: FIX THIS
-      // var contentString = 'testing'
-
-      // var infowindow = new google.maps.InfoWindow({
-      //     content: contentString
-      // });
-
-      // var marker = new google.maps.Marker({
-      //     position: myLatlng,
-      //     map: map,
-      //     title: 'Uluru (Ayers Rock)'
-      // });
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
 
-
     $(document).ready(function(){
-
-      var markers = []
-
-
       $('#aj').on('click', function(event) {
         event.preventDefault()
         $.ajax({
           type: "GET",
           url: "/graduates"
         }).done(function(response) {
-          var ary = []
+          var infoBoxes = []
+
           response.forEach(function(graduate) {
             var ll = new google.maps.LatLng((parseFloat(graduate.latitude)), (parseFloat(graduate.longitude)))
             var marker = new google.maps.Marker({
@@ -62,16 +44,19 @@
               map: window.map
             })
 
-            var infowindow = new google.maps.InfoWindow({
-                content: "TEST"
+            var contentString = "<p>" + graduate.name + "</p><p>" + graduate.current_location + "</p><p>" + graduate.current_employer + "</p>" + "<a href=" + graduate.linkedin_url + ">LinkedIn</a></p>"
+            var infoWindow = new google.maps.InfoWindow({
+                content: contentString
             });
+
+            infoBoxes.push(infoWindow)
 
             google.maps.event.addListener(marker, 'click', function() {
-              // TODO: close all other info boxes
-              infowindow.open(window.map,marker);
+              infoBoxes.forEach(function(infoBox) {
+                infoBox.close()
+              })
+              infoWindow.open(window.map,marker);
             });
-
-            markers.push(marker)
           })
         })
       })

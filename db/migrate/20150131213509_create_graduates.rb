@@ -6,7 +6,7 @@ class CreateGraduates < ActiveRecord::Migration
       t.string :current_employer
       t.string :longitude
       t.string :latitude
-
+      t.string :linkedin_url
       t.timestamps null: false
     end
   end
