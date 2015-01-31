@@ -3649,3 +3649,686 @@ Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 
 
 
 Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 16:26:11 -0500
+  [1m[36m (55.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (3.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGraduates (20150131213509)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (34.5ms)[0m  [1mCREATE TABLE "graduates" ("id" serial primary key, "name" character varying, "current_location" character varying, "current_employer" character varying, "longtitude" character varying, "latitude" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150131213509"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (6.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'graduates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (42.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (12.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGraduates (20150131213509)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (28.4ms)[0m  [1mCREATE TABLE "graduates" ("id" serial primary key, "name" character varying, "current_location" character varying, "current_employer" character varying, "longtitude" character varying, "latitude" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150131213509"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (6.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'graduates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (25.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (18.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGraduates (20150131213509)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (24.1ms)[0m  [1mCREATE TABLE "graduates" ("id" serial primary key, "name" character varying, "current_location" character varying, "current_employer" character varying, "longitude" character varying, "latitude" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150131213509"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (6.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'graduates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Kelsey Ando"], ["current_location", "Chicago"], ["current_employer", "Dev Bootcamp"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:44:12.659465"], ["updated_at", "2015-01-31 21:44:12.659465"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Christopher Scherer"], ["current_location", "Westerville"], ["current_employer", "Robin Technologies"], ["latitude", "40.1261743"], ["longitude", "-82.92906959999999"], ["created_at", "2015-01-31 21:44:14.928085"], ["updated_at", "2015-01-31 21:44:14.928085"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[36m (5.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGraduates (20150131213509)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "graduates" ("id" serial primary key, "name" character varying, "current_location" character varying, "current_employer" character varying, "longitude" character varying, "latitude" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150131213509"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'graduates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (38.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (6.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateGraduates (20150131213509)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (28.7ms)[0m  [1mCREATE TABLE "graduates" ("id" serial primary key, "name" character varying, "current_location" character varying, "current_employer" character varying, "longitude" character varying, "latitude" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150131213509"]]
+  [1m[36m (10.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (12.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'graduates'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (14.0ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Kelsey Ando"], ["current_location", "Chicago"], ["current_employer", "Dev Bootcamp"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:51:54.080922"], ["updated_at", "2015-01-31 21:51:54.080922"]]
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Christopher Scherer"], ["current_location", "Westerville"], ["current_employer", "Robin Technologies"], ["latitude", "40.1261743"], ["longitude", "-82.92906959999999"], ["created_at", "2015-01-31 21:51:57.983266"], ["updated_at", "2015-01-31 21:51:57.983266"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "John Norton"], ["current_location", "Chicago"], ["current_employer", "Punchkick Interactive Inc."], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:52:22.360156"], ["updated_at", "2015-01-31 21:52:22.360156"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Dan Brown"], ["current_location", "London"], ["current_employer", "Occam Education"], ["latitude", "51.5073509"], ["longitude", "-0.1277583"], ["created_at", "2015-01-31 21:52:26.457934"], ["updated_at", "2015-01-31 21:52:26.457934"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Benjamin Myhre"], ["current_location", "Fargo"], ["current_employer", "Sundog"], ["latitude", "46.8771863"], ["longitude", "-96.7898034"], ["created_at", "2015-01-31 21:52:36.865145"], ["updated_at", "2015-01-31 21:52:36.865145"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Drew West"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Dev Bootcamp"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:52:40.996741"], ["updated_at", "2015-01-31 21:52:40.996741"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Lindsey Menges"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Proofpoint"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:52:44.053833"], ["updated_at", "2015-01-31 21:52:44.053833"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "James Hulley"], ["current_location", "San Francisco"], ["current_employer", "UpCounsel, Inc."], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:52:49.218385"], ["updated_at", "2015-01-31 21:52:49.218385"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nick Meehan"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Breeze (joinbreeze.com)"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:52:55.412369"], ["updated_at", "2015-01-31 21:52:55.412369"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Mitchell Tasic"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Recent Dev Bootcamp Graduate"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:52:59.760752"], ["updated_at", "2015-01-31 21:52:59.760752"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Carolyn Atterbury"], ["current_location", "San Francisco"], ["current_employer", "Retriever Technology"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:53:01.526784"], ["updated_at", "2015-01-31 21:53:01.526784"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Christopher Yancey, CPA"], ["current_location", "San Francisco Bay Area"], ["current_employer", "AuditFile"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:53:04.668141"], ["updated_at", "2015-01-31 21:53:04.668141"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Andrew Fruth"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Zendesk"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:53:09.898369"], ["updated_at", "2015-01-31 21:53:09.898369"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Aaron Wertman"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Fetch Mobile (Powering Best Apps Market)"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:53:12.809798"], ["updated_at", "2015-01-31 21:53:12.809798"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Clay Morton"], ["current_location", "Louisville"], ["current_employer", "Skunkwerx Performance Automotive, LLC"], ["latitude", "38.2526647"], ["longitude", "-85.7584557"], ["created_at", "2015-01-31 21:53:14.942734"], ["updated_at", "2015-01-31 21:53:14.942734"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Meara Charnetzki"], ["current_location", "Chicago"], ["current_employer", "Enova International"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:53:19.367632"], ["updated_at", "2015-01-31 21:53:19.367632"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Oliver Francescatti"], ["current_location", "Chicago"], ["current_employer", "Digital Primates"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:53:25.716254"], ["updated_at", "2015-01-31 21:53:25.716254"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Nathan Hadlock"], ["current_location", "San Francisco"], ["current_employer", "Reviver"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:53:27.801125"], ["updated_at", "2015-01-31 21:53:27.801125"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Elaine Yu"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Monsoon Company"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:53:33.848801"], ["updated_at", "2015-01-31 21:53:33.848801"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Alex Froelich"], ["current_location", "Los Angeles"], ["current_employer", "MakersKit"], ["latitude", "34.0522342"], ["longitude", "-118.2436849"], ["created_at", "2015-01-31 21:53:41.342062"], ["updated_at", "2015-01-31 21:53:41.342062"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Drew Teter"], ["current_location", "Boston"], ["current_employer", "Shareable Ink"], ["latitude", "42.3600825"], ["longitude", "-71.0588801"], ["created_at", "2015-01-31 21:53:56.374304"], ["updated_at", "2015-01-31 21:53:56.374304"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Brendan Susens-Jackson"], ["current_location", "New York"], ["current_employer", "Freelance"], ["latitude", "40.6654752"], ["longitude", "-73.8844039"], ["created_at", "2015-01-31 21:53:59.781941"], ["updated_at", "2015-01-31 21:53:59.781941"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Justin Lee"], ["current_location", "New York"], ["current_employer", "Freelance"], ["latitude", "40.6654752"], ["longitude", "-73.8844039"], ["created_at", "2015-01-31 21:54:06.327333"], ["updated_at", "2015-01-31 21:54:06.327333"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Max Lock"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Shipstr"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:54:15.487337"], ["updated_at", "2015-01-31 21:54:15.487337"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Audrey McGowan"], ["current_location", "San Francisco"], ["current_employer", "Shipstr"], ["latitude", "37.8632586"], ["longitude", "-122.492001"], ["created_at", "2015-01-31 21:54:17.901324"], ["updated_at", "2015-01-31 21:54:17.901324"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Derek Johnson"], ["current_location", "Muncie"], ["current_employer", "2U"], ["latitude", "40.186768"], ["longitude", "-85.3760595"], ["created_at", "2015-01-31 21:54:24.977932"], ["updated_at", "2015-01-31 21:54:24.977932"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Joseph White"], ["current_location", "Brooklyn"], ["current_employer", "Freelance"], ["latitude", "40.6654752"], ["longitude", "-73.8844039"], ["created_at", "2015-01-31 21:54:32.442291"], ["updated_at", "2015-01-31 21:54:32.442291"]]
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Kim Brewer"], ["current_location", "San Francisco Bay Area"], ["current_employer", "VolunteerMatch"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:54:47.134018"], ["updated_at", "2015-01-31 21:54:47.134018"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "David Kerr"], ["current_location", "New York"], ["current_employer", "Plyfe"], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 21:54:49.675671"], ["updated_at", "2015-01-31 21:54:49.675671"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Kevin Zhou"], ["current_location", "San Francisco Bay Area"], ["current_employer", "GuideSpark"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:55:00.467011"], ["updated_at", "2015-01-31 21:55:00.467011"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (4.1ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ken Sin"], ["current_location", "Brooklyn"], ["current_employer", "Plyfe"], ["latitude", "40.6781784"], ["longitude", "-73.9441579"], ["created_at", "2015-01-31 21:55:03.936859"], ["updated_at", "2015-01-31 21:55:03.936859"]]
+  [1m[35m (5.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jason Matney"], ["current_location", "Raleigh"], ["current_employer", "NC State University"], ["latitude", "35.7846633"], ["longitude", "-78.6820946"], ["created_at", "2015-01-31 21:55:07.321622"], ["updated_at", "2015-01-31 21:55:07.321622"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Danielle Adams"], ["current_location", "New York"], ["current_employer", "Plyfe"], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 21:55:14.466646"], ["updated_at", "2015-01-31 21:55:14.466646"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (2.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Eugene Lynch"], ["current_location", "Berkeley"], ["current_employer", "Vibrotact"], ["latitude", "37.8715926"], ["longitude", "-122.272747"], ["created_at", "2015-01-31 21:55:23.018550"], ["updated_at", "2015-01-31 21:55:23.018550"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "David Booth"], ["current_location", "Wellington & Wairarapa"], ["current_employer", "AngelList"], ["latitude", "-41.2864603"], ["longitude", "174.776236"], ["created_at", "2015-01-31 21:55:32.879593"], ["updated_at", "2015-01-31 21:55:32.879593"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Chris Cooper"], ["current_location", "San Francisco"], ["current_employer", "FoodQ"], ["latitude", "22.485427"], ["longitude", "114.056323"], ["created_at", "2015-01-31 21:55:38.934940"], ["updated_at", "2015-01-31 21:55:38.934940"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sean Dickey"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Barnes & Noble"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:55:43.519265"], ["updated_at", "2015-01-31 21:55:43.519265"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Tiffany Kaiser"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Autopilot HQ"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:55:49.449328"], ["updated_at", "2015-01-31 21:55:49.449328"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Elizabeth Rhodes"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Electric Imp, Inc."], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:55:55.708374"], ["updated_at", "2015-01-31 21:55:55.708374"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Kenji Miwa"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Quixey"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:56:00.081446"], ["updated_at", "2015-01-31 21:56:00.081446"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "John McCurley"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Telmate"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:56:06.114019"], ["updated_at", "2015-01-31 21:56:06.114019"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Michael Ohm"], ["current_location", "San Francisco Bay Area"], ["current_employer", "GuideOn"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:56:17.852823"], ["updated_at", "2015-01-31 21:56:17.852823"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Melissa Alvarez"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Telmate"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:56:21.199491"], ["updated_at", "2015-01-31 21:56:21.199491"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jordan Kamin"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Dev Bootcamp"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:56:26.215376"], ["updated_at", "2015-01-31 21:56:26.215376"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Antonio Perez"], ["current_location", "New York"], ["current_employer", "Freelance UX Designer | Full Stack Developer"], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 21:56:41.263149"], ["updated_at", "2015-01-31 21:56:41.263149"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Rootul Patel"], ["current_location", "Chestnut Hill"], ["current_employer", "Boston College"], ["latitude", "42.3355488"], ["longitude", "-71.16849450000001"], ["created_at", "2015-01-31 21:56:45.557232"], ["updated_at", "2015-01-31 21:56:45.557232"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Farheen Malik"], ["current_location", "Brooklyn"], ["current_employer", "United Federation of Teachers (UFT) Teacher Center"], ["latitude", "40.6781784"], ["longitude", "-73.9441579"], ["created_at", "2015-01-31 21:56:51.362816"], ["updated_at", "2015-01-31 21:56:51.362816"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Cassie Moy"], ["current_location", "New York"], ["current_employer", "Byte Consulting"], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 21:56:54.528092"], ["updated_at", "2015-01-31 21:56:54.528092"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Stefan Krause-Palfner"], ["current_location", "Berlin"], ["current_employer", "WorkHub"], ["latitude", "52.52000659999999"], ["longitude", "13.404954"], ["created_at", "2015-01-31 21:56:58.899651"], ["updated_at", "2015-01-31 21:56:58.899651"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Dane Johnson"], ["current_location", "Sacramento"], ["current_employer", "The Hammock Initiative"], ["latitude", "38.5815719"], ["longitude", "-121.4943996"], ["created_at", "2015-01-31 21:57:14.986328"], ["updated_at", "2015-01-31 21:57:14.986328"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.9ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Kevin Berry"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Flyr Inc."], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:57:20.168810"], ["updated_at", "2015-01-31 21:57:20.168810"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jake Sikora"], ["current_location", "Chicago"], ["current_employer", "Signal ™"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:57:29.256901"], ["updated_at", "2015-01-31 21:57:29.256901"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sean O'Toole"], ["current_location", "Kansas City"], ["current_employer", "Phoenix Web Group"], ["latitude", "39.0997265"], ["longitude", "-94.5785667"], ["created_at", "2015-01-31 21:57:36.457692"], ["updated_at", "2015-01-31 21:57:36.457692"]]
+  [1m[35m (8.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Mark Horowitz"], ["current_location", "Brownsville"], ["current_employer", "Independent Consulting"], ["latitude", "25.9017472"], ["longitude", "-97.4974838"], ["created_at", "2015-01-31 21:57:44.482875"], ["updated_at", "2015-01-31 21:57:44.482875"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Scott Mascio"], ["current_location", "Columbus"], ["current_employer", "The Ohio State University"], ["latitude", "40.0141905"], ["longitude", "-83.03091429999999"], ["created_at", "2015-01-31 21:57:53.592246"], ["updated_at", "2015-01-31 21:57:53.592246"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Eigil Sagafos"], ["current_location", "Oslo Area"], ["current_employer", "Agens AS - Digital Craftmanship"], ["latitude", "59.9138688"], ["longitude", "10.7522454"], ["created_at", "2015-01-31 21:57:58.716540"], ["updated_at", "2015-01-31 21:57:58.716540"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Betsy Lorton"], ["current_location", "Madison"], ["current_employer", "Bendyworks"], ["latitude", "43.0730517"], ["longitude", "-89.4012302"], ["created_at", "2015-01-31 21:58:03.160028"], ["updated_at", "2015-01-31 21:58:03.160028"]]
+  [1m[35m (6.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Kenneth Yu"], ["current_location", "San Francisco"], ["current_employer", "Navera, Inc."], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:58:12.329162"], ["updated_at", "2015-01-31 21:58:12.329162"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Salar Khan"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Sosh"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 21:58:17.166791"], ["updated_at", "2015-01-31 21:58:17.166791"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Robert Taraya"], ["current_location", "Dallas/Fort Worth Area"], ["current_employer", "Mineralist Inc."], ["latitude", "32.7766642"], ["longitude", "-96.79698789999999"], ["created_at", "2015-01-31 21:58:21.409556"], ["updated_at", "2015-01-31 21:58:21.409556"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "John Uke"], ["current_location", "San Francisco"], ["current_employer", "NewVo"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:58:23.978792"], ["updated_at", "2015-01-31 21:58:23.978792"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Daniel Trostli"], ["current_location", "San Francisco"], ["current_employer", "Quirky Inc"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:58:29.100597"], ["updated_at", "2015-01-31 21:58:29.100597"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Thomas Anthony"], ["current_location", "Venice"], ["current_employer", "Web Developer"], ["latitude", "45.4408474"], ["longitude", "12.3155151"], ["created_at", "2015-01-31 21:58:34.727039"], ["updated_at", "2015-01-31 21:58:34.727039"]]
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Alek Sharma"], ["current_location", "San Francisco"], ["current_employer", "Sosh"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:58:38.345303"], ["updated_at", "2015-01-31 21:58:38.345303"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Taylor Hudson"], ["current_location", "San Francisco"], ["current_employer", "Banjo"], ["latitude", "25.7660141"], ["longitude", "-100.3727846"], ["created_at", "2015-01-31 21:58:41.520071"], ["updated_at", "2015-01-31 21:58:41.520071"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Christopher Wallace"], ["current_location", "Alameda"], ["current_employer", "Afar Media"], ["latitude", "37.2079057"], ["longitude", "-4.6573055"], ["created_at", "2015-01-31 21:58:44.365790"], ["updated_at", "2015-01-31 21:58:44.365790"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brandon Liu"], ["current_location", "San Francisco"], ["current_employer", "1debit"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:58:46.827251"], ["updated_at", "2015-01-31 21:58:46.827251"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Annie Sing"], ["current_location", "San Francisco"], ["current_employer", "Red Clay"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:58:50.123024"], ["updated_at", "2015-01-31 21:58:50.123024"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jonathan Turnbull-Reilly"], ["current_location", "Boston"], ["current_employer", "Wistia"], ["latitude", "42.3600825"], ["longitude", "-71.0588801"], ["created_at", "2015-01-31 21:58:55.506086"], ["updated_at", "2015-01-31 21:58:55.506086"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Laura Mead"], ["current_location", "San Francisco"], ["current_employer", "Twitter"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:58:58.788432"], ["updated_at", "2015-01-31 21:58:58.788432"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Steven Nugent"], ["current_location", "Federal Way"], ["current_employer", "Experi"], ["latitude", "47.3223221"], ["longitude", "-122.3126222"], ["created_at", "2015-01-31 21:59:01.876030"], ["updated_at", "2015-01-31 21:59:01.876030"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jennifer Yee"], ["current_location", "San Francisco"], ["current_employer", "Independent Consulting"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:59:04.148633"], ["updated_at", "2015-01-31 21:59:04.148633"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Paul Chong"], ["current_location", "San Francisco"], ["current_employer", "Zynga"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 21:59:12.278266"], ["updated_at", "2015-01-31 21:59:12.278266"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Annabel Dunstone"], ["current_location", "Chicago"], ["current_employer", "ÄKTA"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:59:23.789530"], ["updated_at", "2015-01-31 21:59:23.789530"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Elizabeth Engelman"], ["current_location", "Chicago"], ["current_employer", "8th Light"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:59:27.931651"], ["updated_at", "2015-01-31 21:59:27.931651"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jennifer Fry"], ["current_location", "Austin"], ["current_employer", "Airbnb"], ["latitude", "30.267153"], ["longitude", "-97.7430608"], ["created_at", "2015-01-31 21:59:37.592772"], ["updated_at", "2015-01-31 21:59:37.592772"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Eric Abram Schulz"], ["current_location", "Chicago"], ["current_employer", "Blitz Lake Capital Partners"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:59:41.376278"], ["updated_at", "2015-01-31 21:59:41.376278"]]
+  [1m[35m (2.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Alex Eisenach"], ["current_location", "Phoenix"], ["current_employer", "Voltari"], ["latitude", "33.4483771"], ["longitude", "-112.0740373"], ["created_at", "2015-01-31 21:59:46.966645"], ["updated_at", "2015-01-31 21:59:46.966645"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Emily Anderson"], ["current_location", "Chicago"], ["current_employer", "Modest, Inc."], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 21:59:57.734285"], ["updated_at", "2015-01-31 21:59:57.734285"]]
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jonathan Howden"], ["current_location", "Chicago"], ["current_employer", "Backstop Solutions Group"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:00:05.174504"], ["updated_at", "2015-01-31 22:00:05.174504"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christopher \"Dain\" Hall"], ["current_location", "Chicago"], ["current_employer", "dough, Inc."], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:00:08.524288"], ["updated_at", "2015-01-31 22:00:08.524288"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Nicholas Scricco"], ["current_location", "San Francisco"], ["current_employer", "yerdle"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:00:22.807648"], ["updated_at", "2015-01-31 22:00:22.807648"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tyler Waneka"], ["current_location", "San Francisco"], ["current_employer", "SourceClear"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:00:28.448447"], ["updated_at", "2015-01-31 22:00:28.448447"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Morgan Wildermuth"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Eko Devices"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:00:37.611065"], ["updated_at", "2015-01-31 22:00:37.611065"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Thomas Allnutt"], ["current_location", "Oakland"], ["current_employer", "GreenInfo Network"], ["latitude", "37.8043637"], ["longitude", "-122.2711137"], ["created_at", "2015-01-31 22:00:44.672198"], ["updated_at", "2015-01-31 22:00:44.672198"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jonathan Chew"], ["current_location", "San Francisco"], ["current_employer", "Marqeta, Inc"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:00:50.348137"], ["updated_at", "2015-01-31 22:00:50.348137"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Doug Mill"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Telmate"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:00:54.810307"], ["updated_at", "2015-01-31 22:00:54.810307"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Kiera Radman"], ["current_location", "San Francisco Bay Area"], ["current_employer", "ThoughtWorks"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:00:59.014747"], ["updated_at", "2015-01-31 22:00:59.014747"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Max Davila"], ["current_location", "San Francisco"], ["current_employer", "Marqeta, Inc"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:01:03.988641"], ["updated_at", "2015-01-31 22:01:03.988641"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Sam Blackman"], ["current_location", "New York"], ["current_employer", "Dev Bootcamp"], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 22:01:08.126100"], ["updated_at", "2015-01-31 22:01:08.126100"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Shawn Klein"], ["current_location", "Chicago"], ["current_employer", "8th Light"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:01:18.661928"], ["updated_at", "2015-01-31 22:01:18.661928"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Steven Spiel"], ["current_location", "Raleigh-Durham"], ["current_employer", "SciMed Solutions"], ["latitude", "35.7795897"], ["longitude", "-78.6381787"], ["created_at", "2015-01-31 22:01:28.927798"], ["updated_at", "2015-01-31 22:01:28.927798"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Justin Park"], ["current_location", "Chicago"], ["current_employer", "RedShelf"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:01:34.197479"], ["updated_at", "2015-01-31 22:01:34.197479"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Kevin Falank"], ["current_location", "Huntersville"], ["current_employer", "Beacon Hill Staffing Group"], ["latitude", "35.410694"], ["longitude", "-80.84285040000002"], ["created_at", "2015-01-31 22:01:37.235793"], ["updated_at", "2015-01-31 22:01:37.235793"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nicholas Lee"], ["current_location", "Chicago"], ["current_employer", "Belly"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:01:48.666867"], ["updated_at", "2015-01-31 22:01:48.666867"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ian Root"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Liiv"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:01:54.414343"], ["updated_at", "2015-01-31 22:01:54.414343"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Rhonda Jezek"], ["current_location", "Berkeley"], ["current_employer", "Apple"], ["latitude", "40.6750951"], ["longitude", "-73.9750245"], ["created_at", "2015-01-31 22:01:57.473326"], ["updated_at", "2015-01-31 22:01:57.473326"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Chae O'Keefe"], ["current_location", "Atlanta"], ["current_employer", "Big Nerd Ranch"], ["latitude", "33.7606096"], ["longitude", "-84.3222378"], ["created_at", "2015-01-31 22:02:02.607387"], ["updated_at", "2015-01-31 22:02:02.607387"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Doktor Gurson"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Doblet, Inc. (YC S14)"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:02:05.050212"], ["updated_at", "2015-01-31 22:02:05.050212"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Dan Apczynski"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Zendesk"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:02:10.046078"], ["updated_at", "2015-01-31 22:02:10.046078"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Steven Swigart"], ["current_location", "San Francisco"], ["current_employer", "Twitch"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:02:13.526937"], ["updated_at", "2015-01-31 22:02:13.526937"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Charles Young"], ["current_location", "San Francisco"], ["current_employer", "KISSmetrics"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:02:16.929040"], ["updated_at", "2015-01-31 22:02:16.929040"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alex Ung"], ["current_location", "New York"], ["current_employer", "Dev Bootcamp"], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 22:02:24.160738"], ["updated_at", "2015-01-31 22:02:24.160738"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Steve Ono"], ["current_location", "New York"], ["current_employer", "Gamma Grafix, Inc."], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 22:02:27.285488"], ["updated_at", "2015-01-31 22:02:27.285488"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Mark. E. Hagel"], ["current_location", "Portland"], ["current_employer", "Melissa Data Corp."], ["latitude", "45.5230622"], ["longitude", "-122.6764816"], ["created_at", "2015-01-31 22:02:41.061621"], ["updated_at", "2015-01-31 22:02:41.061621"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Fabian Uribe"], ["current_location", "Sunnyvale"], ["current_employer", "Yahoo"], ["latitude", "37.4155921"], ["longitude", "-122.0255886"], ["created_at", "2015-01-31 22:02:49.270337"], ["updated_at", "2015-01-31 22:02:49.270337"]]
+  [1m[36m (7.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Anirudh Dhullipalla"], ["current_location", "Chicago"], ["current_employer", "ThoughtWorks"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:02:55.396793"], ["updated_at", "2015-01-31 22:02:55.396793"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jeff Chang"], ["current_location", "San Francisco"], ["current_employer", "Doblet Inc. (YC S14)"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:03:01.711817"], ["updated_at", "2015-01-31 22:03:01.711817"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  BEGIN
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Daniel Jones"], ["current_location", "Provo"], ["current_employer", "MX Enabled"], ["latitude", "40.2338438"], ["longitude", "-111.6585337"], ["created_at", "2015-01-31 22:03:05.168399"], ["updated_at", "2015-01-31 22:03:05.168399"]]
+  [1m[35m (10.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Micah Sherman"], ["current_location", "Chicago"], ["current_employer", "Mercaris"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:03:17.305800"], ["updated_at", "2015-01-31 22:03:17.305800"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alvin Ang"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Turn/River Capital"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:03:24.294999"], ["updated_at", "2015-01-31 22:03:24.294999"]]
+  [1m[35m (7.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Gary Bearman"], ["current_location", "Greater Los Angeles Area"], ["current_employer", "Santa Cruz, CA"], ["latitude", "36.9741171"], ["longitude", "-122.0307963"], ["created_at", "2015-01-31 22:03:27.098328"], ["updated_at", "2015-01-31 22:03:27.098328"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Andrew Holsted"], ["current_location", "Boulder"], ["current_employer", "Goosetail Labs"], ["latitude", "40.0149856"], ["longitude", "-105.2705456"], ["created_at", "2015-01-31 22:03:30.429096"], ["updated_at", "2015-01-31 22:03:30.429096"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jason Ritenour"], ["current_location", "Raleigh-Durham"], ["current_employer", "JSR Consulting, LLC"], ["latitude", "35.7795897"], ["longitude", "-78.6381787"], ["created_at", "2015-01-31 22:03:36.436037"], ["updated_at", "2015-01-31 22:03:36.436037"]]
+  [1m[36m (2.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Liz Hubertz"], ["current_location", "San Francisco Bay Area"], ["current_employer", "BabyList"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:03:38.311148"], ["updated_at", "2015-01-31 22:03:38.311148"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "George Bonner"], ["current_location", "San Francisco"], ["current_employer", "OpenTable"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:03:41.218283"], ["updated_at", "2015-01-31 22:03:41.218283"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jim Bowser"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Oliver\"s Market"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:03:44.310284"], ["updated_at", "2015-01-31 22:03:44.310284"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ofri Harlev"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Positive Arts"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:03:49.265534"], ["updated_at", "2015-01-31 22:03:49.265534"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nadine Bruder"], ["current_location", "Berlin Area"], ["current_employer", "JUST DAMN RIGHT"], ["latitude", "52.52000659999999"], ["longitude", "13.404954"], ["created_at", "2015-01-31 22:03:59.574321"], ["updated_at", "2015-01-31 22:03:59.574321"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Vi Tran"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Freelance"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:04:03.258094"], ["updated_at", "2015-01-31 22:04:03.258094"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Bobby Sudekum"], ["current_location", "San Francisco"], ["current_employer", "MapBox"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:04:06.463579"], ["updated_at", "2015-01-31 22:04:06.463579"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Austin Meisel"], ["current_location", "San Francisco"], ["current_employer", "Adobe"], ["latitude", "19.3246008"], ["longitude", "-98.88189679999999"], ["created_at", "2015-01-31 22:04:14.284100"], ["updated_at", "2015-01-31 22:04:14.284100"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tom Galpin"], ["current_location", "San Francisco"], ["current_employer", "Thismoment Inc."], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:04:17.836658"], ["updated_at", "2015-01-31 22:04:17.836658"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Keith Tom"], ["current_location", "San Francisco Bay Area"], ["current_employer", "LendingHome Corporation"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:04:27.639402"], ["updated_at", "2015-01-31 22:04:27.639402"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Zassmin Montes de Oca"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Lumos Labs (Lumosity)"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:04:37.369824"], ["updated_at", "2015-01-31 22:04:37.369824"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Adam Loo"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Grio"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:04:41.721631"], ["updated_at", "2015-01-31 22:04:41.721631"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Christine Marquardt"], ["current_location", "Fremont"], ["current_employer", "Scribd"], ["latitude", "37.5482697"], ["longitude", "-121.9885719"], ["created_at", "2015-01-31 22:04:45.484627"], ["updated_at", "2015-01-31 22:04:45.484627"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Brett Sanders"], ["current_location", "Raleigh"], ["current_employer", "6fusion"], ["latitude", "35.7795897"], ["longitude", "-78.6381787"], ["created_at", "2015-01-31 22:04:50.606040"], ["updated_at", "2015-01-31 22:04:50.606040"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brandon Bailey"], ["current_location", "Chicago"], ["current_employer", "Slalom Consulting"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:04:54.208801"], ["updated_at", "2015-01-31 22:04:54.208801"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Disa Johnson"], ["current_location", "Chicago"], ["current_employer", "Tribune Publishing ($TPUB)"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:04:57.158307"], ["updated_at", "2015-01-31 22:04:57.158307"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Eric Allen"], ["current_location", "Houston"], ["current_employer", "Zehl & Associates"], ["latitude", "29.7604267"], ["longitude", "-95.3698028"], ["created_at", "2015-01-31 22:05:01.438950"], ["updated_at", "2015-01-31 22:05:01.438950"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ryan Burbank"], ["current_location", "San Francisco Bay Area"], ["current_employer", "StreamSend"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:05:08.325578"], ["updated_at", "2015-01-31 22:05:08.325578"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Kevin Buchanan"], ["current_location", "Chicago"], ["current_employer", "8th Light"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:05:11.019743"], ["updated_at", "2015-01-31 22:05:11.019743"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Rachel Warbelow"], ["current_location", "Denver"], ["current_employer", "Turing School of Software & Design"], ["latitude", "39.7497327"], ["longitude", "-104.9999964"], ["created_at", "2015-01-31 22:05:13.141868"], ["updated_at", "2015-01-31 22:05:13.141868"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jake Myers"], ["current_location", "Boulder"], ["current_employer", "Mondo Robot"], ["latitude", "40.0149856"], ["longitude", "-105.2705456"], ["created_at", "2015-01-31 22:05:16.581384"], ["updated_at", "2015-01-31 22:05:16.581384"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Edward Connell"], ["current_location", "Chicago"], ["current_employer", "Vibes"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:05:20.453235"], ["updated_at", "2015-01-31 22:05:20.453235"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "James Carney"], ["current_location", "New York"], ["current_employer", "UrbanBound"], ["latitude", "40.7127837"], ["longitude", "-74.0059413"], ["created_at", "2015-01-31 22:05:24.945723"], ["updated_at", "2015-01-31 22:05:24.945723"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Tyler Hartland"], ["current_location", "Minneapolis"], ["current_employer", "Code42"], ["latitude", "44.977753"], ["longitude", "-93.2650108"], ["created_at", "2015-01-31 22:05:28.427479"], ["updated_at", "2015-01-31 22:05:28.427479"]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Benjamin Yorke"], ["current_location", "Chicago"], ["current_employer", "Blue Otter"], ["latitude", "41.8781136"], ["longitude", "-87.6297982"], ["created_at", "2015-01-31 22:05:33.816301"], ["updated_at", "2015-01-31 22:05:33.816301"]]
+  [1m[35m (2.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Chris Laubacher"], ["current_location", "Santa Monica"], ["current_employer", "Twenty20 Inc."], ["latitude", "34.0194543"], ["longitude", "-118.4911912"], ["created_at", "2015-01-31 22:05:39.994917"], ["updated_at", "2015-01-31 22:05:39.994917"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "James Fickel"], ["current_location", "San Francisco"], ["current_employer", "Dev Bootcamp"], ["latitude", "37.7845852"], ["longitude", "-122.3972145"], ["created_at", "2015-01-31 22:05:42.665177"], ["updated_at", "2015-01-31 22:05:42.665177"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Navid Mostafavi"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Indiegogo"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:05:46.488532"], ["updated_at", "2015-01-31 22:05:46.488532"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jared Smith"], ["current_location", "Rochester"], ["current_employer", "Rochester Institute of Technology"], ["latitude", "43.0832027"], ["longitude", "-77.6756115"], ["created_at", "2015-01-31 22:05:53.712936"], ["updated_at", "2015-01-31 22:05:53.712936"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ryan Tong"], ["current_location", "San Francisco Bay Area"], ["current_employer", "DJI (大疆创新)"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:05:57.103880"], ["updated_at", "2015-01-31 22:05:57.103880"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dean Tambling"], ["current_location", "San Francisco"], ["current_employer", "Everlane"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:05:59.657090"], ["updated_at", "2015-01-31 22:05:59.657090"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jennifer Byrne"], ["current_location", "Austin"], ["current_employer", "MyCrowd, Inc."], ["latitude", "30.267153"], ["longitude", "-97.7430608"], ["created_at", "2015-01-31 22:06:07.739847"], ["updated_at", "2015-01-31 22:06:07.739847"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Lloyd Taylor"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Originate"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:06:24.163929"], ["updated_at", "2015-01-31 22:06:24.163929"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Lillie Chilen"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Omada Health"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:06:28.603288"], ["updated_at", "2015-01-31 22:06:28.603288"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Maria Pacana"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Apportable"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:06:33.870772"], ["updated_at", "2015-01-31 22:06:33.870772"]]
+  [1m[35m (2.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Shiv Kumar"], ["current_location", "San Francisco Bay Area"], ["current_employer", "New Relic, Inc."], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:06:36.963900"], ["updated_at", "2015-01-31 22:06:36.963900"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Brian Pope"], ["current_location", "San Francisco Bay Area"], ["current_employer", "The Pasha Group"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:06:41.647274"], ["updated_at", "2015-01-31 22:06:41.647274"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Paulette Luftig"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Mavenlink"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:06:49.849951"], ["updated_at", "2015-01-31 22:06:49.849951"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Matt Barackman"], ["current_location", "Cambridge"], ["current_employer", "Leaf Holdings"], ["latitude", "42.3736158"], ["longitude", "-71.10973349999999"], ["created_at", "2015-01-31 22:07:04.237328"], ["updated_at", "2015-01-31 22:07:04.237328"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Jordan Nemrow"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Teleborder"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:07:09.600561"], ["updated_at", "2015-01-31 22:07:09.600561"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Liz Abinante"], ["current_location", "Portland"], ["current_employer", "New Relic, Inc."], ["latitude", "45.5230622"], ["longitude", "-122.6764816"], ["created_at", "2015-01-31 22:07:21.406305"], ["updated_at", "2015-01-31 22:07:21.406305"]]
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Anna-Marie Panlilio"], ["current_location", "San Francisco"], ["current_employer", "Code for America"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:07:25.362989"], ["updated_at", "2015-01-31 22:07:25.362989"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Mark Morris"], ["current_location", "Fort Collins"], ["current_employer", "Coroutine"], ["latitude", "40.5852602"], ["longitude", "-105.084423"], ["created_at", "2015-01-31 22:07:28.807393"], ["updated_at", "2015-01-31 22:07:28.807393"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ryan Urabe"], ["current_location", "Boulder"], ["current_employer", "Avery Tickets"], ["latitude", "40.0149856"], ["longitude", "-105.2705456"], ["created_at", "2015-01-31 22:07:31.132947"], ["updated_at", "2015-01-31 22:07:31.132947"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Strand McCutchen"], ["current_location", "Seattle"], ["current_employer", "Instructure"], ["latitude", "47.6062095"], ["longitude", "-122.3320708"], ["created_at", "2015-01-31 22:07:35.352485"], ["updated_at", "2015-01-31 22:07:35.352485"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "David Lowenfels"], ["current_location", "San Francisco Bay Area"], ["current_employer", "ScrumNinja"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:07:37.044245"], ["updated_at", "2015-01-31 22:07:37.044245"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Lora L. Abe"], ["current_location", "Las Vegas"], ["current_employer", "Treehouse"], ["latitude", "36.0147955"], ["longitude", "-115.0729138"], ["created_at", "2015-01-31 22:07:38.563285"], ["updated_at", "2015-01-31 22:07:38.563285"]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Earl Wagner"], ["current_location", "Houston"], ["current_employer", "Emergent Management Systems LLC."], ["latitude", "29.7604267"], ["longitude", "-95.3698028"], ["created_at", "2015-01-31 22:07:45.036476"], ["updated_at", "2015-01-31 22:07:45.036476"]]
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jack Zhou"], ["current_location", "San Francisco"], ["current_employer", "Funding Circle USA"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:07:49.009006"], ["updated_at", "2015-01-31 22:07:49.009006"]]
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Henry Wang"], ["current_location", "San Francisco Bay Area"], ["current_employer", "SurveyMonkey"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:07:53.136468"], ["updated_at", "2015-01-31 22:07:53.136468"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Danny Houk"], ["current_location", "Chicago"], ["current_employer", "Braintree"], ["latitude", "51.880087"], ["longitude", "0.5509269"], ["created_at", "2015-01-31 22:08:00.279174"], ["updated_at", "2015-01-31 22:08:00.279174"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Nathaniel Wroblewski"], ["current_location", "San Francisco"], ["current_employer", "KISSmetrics"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:08:11.874679"], ["updated_at", "2015-01-31 22:08:11.874679"]]
+  [1m[36m (2.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Adam Sartell"], ["current_location", "San Francisco"], ["current_employer", "DocuSign"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:08:18.276031"], ["updated_at", "2015-01-31 22:08:18.276031"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ken Rettberg"], ["current_location", "San Francisco Bay Area"], ["current_employer", "TCI: Teachers' Curriculum Institute"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:08:22.372483"], ["updated_at", "2015-01-31 22:08:22.372483"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Travis Lawrence"], ["current_location", "San Francisco"], ["current_employer", "Sincerely"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:08:29.050495"], ["updated_at", "2015-01-31 22:08:29.050495"]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ben Angel"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Envoy Inc"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:08:33.452842"], ["updated_at", "2015-01-31 22:08:33.452842"]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Patrick Vilhena"], ["current_location", "San Francisco Bay Area"], ["current_employer", "1 Mainstream"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:08:41.129479"], ["updated_at", "2015-01-31 22:08:41.129479"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "John Olmsted"], ["current_location", "Berkeley"], ["current_employer", "New Avenue Inc."], ["latitude", "39.9569842"], ["longitude", "-74.1407299"], ["created_at", "2015-01-31 22:08:44.114190"], ["updated_at", "2015-01-31 22:08:44.114190"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Alexander Leishman"], ["current_location", "San Francisco"], ["current_employer", "MaiCoin"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:08:47.694742"], ["updated_at", "2015-01-31 22:08:47.694742"]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Emmanuel Kaunitz"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Dev Bootcamp"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:08:52.703843"], ["updated_at", "2015-01-31 22:08:52.703843"]]
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Austin Brown"], ["current_location", "San Francisco Bay Area"], ["current_employer", "Mapistry"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:08:56.205003"], ["updated_at", "2015-01-31 22:08:56.205003"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Christina Taggart"], ["current_location", "San Francisco"], ["current_employer", "AwesomeBox"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:08:58.761483"], ["updated_at", "2015-01-31 22:08:58.761483"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Andy Lee"], ["current_location", "San Mateo"], ["current_employer", "TechReactor"], ["latitude", "37.5629917"], ["longitude", "-122.3255254"], ["created_at", "2015-01-31 22:09:01.107229"], ["updated_at", "2015-01-31 22:09:01.107229"]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Eli Shkurkin"], ["current_location", "Los Angeles"], ["current_employer", "Azalea Boutique"], ["latitude", "34.0522342"], ["longitude", "-118.2436849"], ["created_at", "2015-01-31 22:09:05.813090"], ["updated_at", "2015-01-31 22:09:05.813090"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Darcey Lachtman"], ["current_location", "San Francisco Bay Area"], ["current_employer", "SEPHORA"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:09:09.862368"], ["updated_at", "2015-01-31 22:09:09.862368"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Aditya Mahesh"], ["current_location", "Berkeley"], ["current_employer", "Google"], ["latitude", "33.0610688"], ["longitude", "-80.0448545"], ["created_at", "2015-01-31 22:09:13.737411"], ["updated_at", "2015-01-31 22:09:13.737411"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Nathan Sass"], ["current_location", "San Francisco"], ["current_employer", "JPMorgan Chase"], ["latitude", "37.788778"], ["longitude", "-122.399444"], ["created_at", "2015-01-31 22:09:19.951150"], ["updated_at", "2015-01-31 22:09:19.951150"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Erin Snyder"], ["current_location", "San Francisco"], ["current_employer", "ThoughtWorks Studios"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:09:23.227794"], ["updated_at", "2015-01-31 22:09:23.227794"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Jackson Behan"], ["current_location", "Las Vegas"], ["current_employer", "Remark Media"], ["latitude", "36.1699412"], ["longitude", "-115.1398296"], ["created_at", "2015-01-31 22:09:27.005957"], ["updated_at", "2015-01-31 22:09:27.005957"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Darrell Sommerlatt"], ["current_location", "Los Angeles"], ["current_employer", "Puteko"], ["latitude", "34.0522342"], ["longitude", "-118.2436849"], ["created_at", "2015-01-31 22:09:32.425086"], ["updated_at", "2015-01-31 22:09:32.425086"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Gregory Gerla"], ["current_location", "Austin"], ["current_employer", "Volusion, Inc."], ["latitude", "30.267153"], ["longitude", "-97.7430608"], ["created_at", "2015-01-31 22:09:37.411569"], ["updated_at", "2015-01-31 22:09:37.411569"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Nina Hwang"], ["current_location", "San Francisco Bay Area"], ["current_employer", "JPMorgan Chase & Co."], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:09:43.211718"], ["updated_at", "2015-01-31 22:09:43.211718"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Tyler Stauss"], ["current_location", "San Francisco"], ["current_employer", "VigLink"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:09:49.175291"], ["updated_at", "2015-01-31 22:09:49.175291"]]
+  [1m[35m (2.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["name", "Ravi S. Rāmphal"], ["current_location", "San Francisco Bay Area"], ["current_employer", "JPMorgan Chase"], ["latitude", "37.7141454"], ["longitude", "-122.25"], ["created_at", "2015-01-31 22:09:52.410557"], ["updated_at", "2015-01-31 22:09:52.410557"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "graduates" ("name", "current_location", "current_employer", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Ashwin Kumar"], ["current_location", "San Francisco"], ["current_employer", "Autopilot"], ["latitude", "37.7749295"], ["longitude", "-122.4194155"], ["created_at", "2015-01-31 22:09:55.606078"], ["updated_at", "2015-01-31 22:09:55.606078"]]
+  [1m[35m (0.5ms)[0m  COMMIT

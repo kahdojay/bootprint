@@ -44,3 +44,6 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'dbc-ruby'
+gem 'linkedin-scraper'
+gem 'geocoder'

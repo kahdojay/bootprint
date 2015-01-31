@@ -1,7 +1,40 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'dbc-ruby'
+require 'time'
+require 'linkedin-scraper'
+require 'geocoder'
+
+DBC.token = 'ce98e9d9d42bd8f4cf594c517fdee969'
+
+cohort = DBC::Cohort.all
+links = []
+
+cohort.each do |c|
+  if (c.in_session == false) && (Time.parse(c.start_date) < Time.now)
+    c.students.each do |s|
+      if (!s.profile[:linked_in].nil?)
+        links << s.profile[:linked_in]
+      end
+    end
+  end
+end
+
+links.reject! { |l| l.empty? }
+links.select! { |l| l.match(/^(https:\/\/www.linkedin.com\/)/) || l.match(/^(http:\/\/www.linkedin.com\/)/) }
+
+links.each do |l|
+  profile = Linkedin::Profile.get_profile(l)
+  if (profile.nil? == false) && (profile.name.nil? == false) && (profile.location.nil? == false) && (profile.current_companies.empty? == false)
+
+    results = Geocoder.search("#{profile.location}, #{profile.current_companies[0][:company]}")
+    if !results.empty?
+      coordinates = results[0].data["geometry"]["location"]
+      p Graduate.create!(
+        name: profile.name,
+        current_location: profile.location,
+        current_employer: profile.current_companies[0][:company],
+        latitude: coordinates['lat'],
+        longitude: coordinates['lng']
+        )
+    end
+  end
+end
