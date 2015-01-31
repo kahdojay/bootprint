@@ -52,7 +52,11 @@
           type: "GET",
           url: "/graduates"
         }).done(function(response) {
-          console.log(response)
+          response.forEach(function(graduate) {
+            new google.maps.Marker({
+            position: graduate.,
+            map: map,
+          })
         })
       })
     })
