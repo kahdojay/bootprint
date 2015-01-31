@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+gem 'gmaps4rails'
+gem 'underscore-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -43,3 +44,6 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'dbc-ruby'
+gem 'linkedin-scraper'
+gem 'geocoder'
