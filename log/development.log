@@ -15173,3 +15173,3477 @@ Started GET "/graduates" for ::1 at 2015-01-31 17:34:26 -0500
 Processing by MapController#graduates as */*
   [1m[36mGraduate Load (0.3ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
 Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:35:29 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 196ms (Views: 195.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:35:29 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:35:30 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.3ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:35:35 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 191ms (Views: 190.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:35:35 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:35:36 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.4ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:36:08 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 190ms (Views: 189.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:36:09 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:36:35 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 233ms (Views: 232.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:36:35 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:37:09 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 185ms (Views: 184.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:37:09 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:37:16 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 186ms (Views: 185.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:37:16 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:37:23 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 198ms (Views: 197.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:37:23 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:37:28 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:38:11 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 241ms (Views: 240.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:38:12 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:38:13 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.2ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:38:23 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 191ms (Views: 190.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:38:23 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:38:24 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.3ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:38:46 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 193ms (Views: 192.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:38:46 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:38:49 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.3ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:39:47 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 186ms (Views: 185.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:39:48 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:39:49 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:40:03 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 235ms (Views: 234.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:40:04 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:40:05 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.3ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:40:25 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 191ms (Views: 190.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:40:26 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:40:27 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:40:31 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 203ms (Views: 202.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:40:31 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:40:32 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:40:33 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.2ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:41:56 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 180ms (Views: 179.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:41:56 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:41:58 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.3ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:43:49 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 220ms (Views: 219.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:43:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:43:50 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:44:04 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 240ms (Views: 239.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:44:05 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:44:21 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 194ms (Views: 193.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:44:21 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:44:22 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 186ms (Views: 185.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:44:23 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:44:25 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 237ms (Views: 236.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:44:25 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:44:46 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 190ms (Views: 189.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:44:46 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:44:48 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 195ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:44:49 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:48:14 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 236ms (Views: 235.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:48:14 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:48:15 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:48:16 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.4ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:48:39 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 233ms (Views: 232.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:48:39 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:48:41 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.3ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:48:53 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 194ms (Views: 193.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:48:53 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:48:55 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.3ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:49:08 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 195ms (Views: 194.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:49:09 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:49:18 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 240ms (Views: 239.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:49:19 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:49:20 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:49:27 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 209ms (Views: 208.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:49:27 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:49:31 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.2ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:49:34 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 199ms (Views: 198.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:49:35 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:49:36 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.3ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:49:48 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 190ms (Views: 189.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:49:48 -0500
+
+
+Started GET "/" for ::1 at 2015-01-31 17:51:48 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 226ms (Views: 225.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:51:48 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:51:56 -0500
+Processing by MapController#graduates as */*
+  [1m[36mGraduate Load (0.2ms)[0m  [1mSELECT "graduates".* FROM "graduates"[0m
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-01-31 17:52:50 -0500
+Processing by MapController#index as HTML
+  Rendered map/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 193ms (Views: 192.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/map-e6cde3bb5cc499a50cb1873f5f0a7d46.css?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmap-64e62ddc273c2f5847f30d698ca14b67.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/application-89f80ee25ec9aec584a9f5c30a9a33c4.css?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/underscore-b05ce040dc8731c7266417563288c67b.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/base-aa25b1ba18680fca685bf02b89cadc3d.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/base/base-4bb42064d912773f8c145ecaa0bd3f36.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/objects/base_builder-32c3edd5bf9b7fee1fb65c9a292432ed.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/objects/builder-3a2d17758d4383c26c7c11552b91900d.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/objects/handler-15345183e0ba90517c73e9aea95a8b19.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/objects/null_clusterer-184ef159404bbc224e9c51150c4efa63.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/common-247de1048a365563e2df3d5d5ae9e56c.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/bound-ca6303c14c183351ce398699ccca3d26.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/circle-726f2360fc93f14bd1c233e7af5ec81e.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/clusterer-c9c0461b8f24fbfb555e43f4094e27d3.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/kml-4a755438dcc54ebd55ac46623ef5d714.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/map-8a1bb6b70f6508734127e48a64597c25.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/marker-1af3b259016c377c3dc8c0ca9e8da0b9.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polygon-19cfe4c93ca1a804d530e6148e64fb71.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/builders/polyline-4773e3d5fed77b789046ac2a89c67901.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/bound-984ccb96424e5455df0d921ab931a5f8.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/circle-9485e2e1027f5642ca68cbe8fdf8faa9.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/clusterer-0f1cb2216e96c567a7c37c28502aec67.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/kml-9cd5ad0454c6160263e37e794dbc501e.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/map-5c40433a8ca7de78aa7b1ecd5c57ad5f.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/marker-6973f6357528120f1de7f64ad486efe4.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polygon-38d1bf1b3df1b3adb38f7745a1939a88.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/objects/polyline-723ff2691f323ffe3d5bccf71cde1e45.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google/primitives-f49c8e12ce8f7b5e295e8f04c590a4ce.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/gmaps/google-06b666f9206a89ca05d76d0b424359f3.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/assets/application-7fe5db8c0ef0ed5849b5c9d9d60aae2d.js?body=1" for ::1 at 2015-01-31 17:52:50 -0500
+
+
+Started GET "/graduates" for ::1 at 2015-01-31 17:52:51 -0500
+Processing by MapController#graduates as */*
+  [1m[35mGraduate Load (0.2ms)[0m  SELECT "graduates".* FROM "graduates"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
