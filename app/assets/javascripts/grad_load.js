@@ -1,5 +1,5 @@
    // This example displays a marker at the center of Australia.
-    // When the user clicks the marker, an info window opens.
+  // When the user clicks the marker, an info window opens.
 console.log('grad file loaded')
     function initialize() {
       var myLatlng = new google.maps.LatLng(40.7048872,-74.0123737);
